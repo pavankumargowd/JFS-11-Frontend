@@ -6,15 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    < !--comments -->
-    < !--block levelgit Element -->
-    <h1>heading 1</h2>
-    <h1>heading 2</h2>
-    < !--Inline Element -->
-    <span>span 1</span>
-    <span>span 2</span>
-
-
 </body>
 </html>
 
