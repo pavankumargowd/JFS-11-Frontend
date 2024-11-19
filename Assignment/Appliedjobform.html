@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <form action="">
+        <h1><center>Job Application Form</center></h1>
+        <p><center><Strong>Please Fill Out the Form Below to Submit your Application</Strong></center></p>
+        <br>
+        <hr>
+        <br>
+        <!-- Name -->
+        <label for="name">1.Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter the Name">
+        <br><br>
+        <!-- Email-->
+        <label for="email">2.Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+        <!-- phone number-->
+        <label for="phone">3.Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <!--Gender-->
+        <label>4.Gender:</label><br>
+        <input type="radio" id="male" name="Gender" value="male">
+        <label for="male">male</label><br>
+        <input type="radio" id="female" name="gander" value="female">
+        <label for="female">female</label><br><br>
+
+        <!--salary-->
+        <label for="salary">5.Expected Salary:</label>
+        <input type="number" id="salary" name="salary" required><br><br>
+        
+        <!--radio-->
+        <label>6.Do you have any experience working in similar fields before?</label><br><br>
+        <input type="radio" id="yes" name="experience" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="experience" value="no">
+        <label for="no">No</label><br><br>
+        
+        <!-- Dropdown Select-->
+        <label for="position">7.What position are you applying for?</label>
+        <select name="position" id="position">
+        <option value="Software Developer">Software Developer</option>
+        <option value="Analyst">Analyst</option>
+        <option value="programmer">programmer</option>
+        <option value="Web Developer">Web Developer</option>
+        <option value="Java Developer">Java Developer</option>
+        <option value="Python Developer">Python Developer</option>
+        </select><br><br>
+        
+
+        <label for="availableDate">8.Available Date:</label>
+        <input type="date" id="availableDate" name="availableDate"><br><br>
+
+        <!--recolated-->
+        <label for="--recolated">9.recolated:</label>
+        <select name="recolated " id="recolated">
+            <option value="hyderabad">hyderbad</option>
+            <option value="bangolare">bangolare</option>
+            <option value="chennai">chennai</option>
+        </select><br><br>
+
+
+        <label for="resume">10.Resume:</label>
+        <input type="file" id="resume" name="resume"><br><br>
+
+        
+    </form>
+    <button>submit</button>
+</body>
+</html>
