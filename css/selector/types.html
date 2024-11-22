@@ -4,38 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=[device-width], initial-scale=1.0">
     <title>Document</title>
+   
+    <!--element-->
     <style>
-        .name{
+        p{
+            color:purple;
+
+        }
+
+    </style>
+
+    <!--class-->
+    <style>
+        .fun{
+            color: orange;
+            
+        }
+    </style>
+    
+    <!--id-->
+    <style>
+        #first{
+           color: aqua;
             background-color: pink;
         }
     </style>
 
+    <!--child-->
     <style>
-        p{
-            color:green
+        div > p{
+            color: brown;
+
+        }
+    </style>
+    
+    <!--descendent-->
+    <style>
+        div  p{
+            color:brown;
+
         }
     </style>
 
-    <!--univerisal-->
+    <!---pesudo-->
     <style>
-        *{
-            color1:red;
-            color2:orange;
-              
+        h1::first-letter{
+            text-transform: uppercase;
+            color: blueviolet;
+        }
+        p::first-line{
+            color:gray;
         }
     </style>
 
-    <!---Id-->
-    <style>
-        name{
-            color: yellow;
-        }
-    </style>
+    <!--attribute-->
+    p1 [title {}
+
+    
+
     
 
 
 </head>
 <body>
-    <div class="name">pawan</div>
+    <p>this is my paragragh</p>
+    <p id="first">this is my paragragh</p>
+    <p>this is my paragragh</p>
+    <p>this is my paragragh</p>
+    <p>this is my paragragh</p>
+   
+   
+   
+    
+    <p class="fun">this is my paragragh 1</p>
+    <p class="fun">this is my paragragh 2</p>
+    
+    <div>
+    <p>this is my paragragh 100</p>
+    <h1>
+    <p>this is my paragragh 200</p>
+    </h1>
+    </div>
+    <h1>this is my paragragh 200</h1>
+    <h1>this is my paragragh 200</h1>
+    <div>
+        <p>
+            Paragraphs are the building blocks of papers. 
+            Many students define paragraphs in terms of length: 
+            a paragraph is a group of at least five sentences, 
+            a paragraph is half a page long, etc. 
+            In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph.
+
+        </p>
+    </div>
+
+
 </body>
 </html>
