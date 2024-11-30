@@ -1,0 +1,40 @@
+4. Grid Layout for Image Gallery
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            gap: 10px;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (min-width: 600px) and (max-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+        <img src="https://via.placeholder.com/150" alt="Placeholder">
+    </div>
+</body>
+</html>
