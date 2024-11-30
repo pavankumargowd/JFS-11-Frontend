@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin:20px;
+
+        }
+        .ease{
+            transition: width 2s ease;
+        }
+        .linear{
+            transition: width 2s linear;
+        }
+    
+        .ease-in{
+            transition: width 2s ease-in;
+        }
+        .ease-out{
+            transition: width 2s ease-out;
+
+        }
+        .box:hover{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div Class="box ease">ease </div>
+    <div Class="box Linear">linear </div>
+    <div Class="box ease-in">ease-in </div>
+    <div Class="box ease-out">ease-out </div>
+</body>
+</html>
