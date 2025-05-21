@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <div class="quote-text" id="quote-text"></div>
+        <div class="quote-author" id="quote-author"></div>
+        <button class="new-quote">New Quote</button>
+      </div>
+<script>
+const  quoteContainer = document.getElementById("quote-container");
+const  quoteText = document.getElementById("quote");
+const authorText =document.getElementById("author");
+function newQuote(){
+    const quote =apiQuotes[Math.floor(Math.random()*apiQuotes.length)];
+       if(!quote.author){
+        authorText.textContent = quote.author;
+       }
+       quoteText.textContent = quote.text;
+       complete();
+    }
+      
+</script>
+    
+</body>
+</html>

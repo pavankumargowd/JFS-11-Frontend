@@ -1,0 +1,118 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Main content styles */
+main {
+  padding: 2em;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 2em 0;
+}
+
+/* Projects section */
+.projects .project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.projects .project {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+  flex: 1 1 calc(50% - 2em);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* About section */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact form */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form label {
+  margin-top: 1em;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form button {
+  margin-top: 1em;
+  padding: 0.7em;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #ff6347;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects .project {
+    flex: 1 1 100%;
+  }
+}

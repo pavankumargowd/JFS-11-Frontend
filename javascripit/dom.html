@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">welcome to codegnan</h1> 
+    
+    <h2 class="pawan 1">codegnan1</h2>
+    <h2 class="pawan 1">codegnan2</h2>
+    <h2 class="pawan 2">codegnan3</h2>
+
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <p>paragraph3</p>
+    <script>
+        let element=document.getElementById('title');
+        element.style.backgroundColor ="yellow";
+
+        let elements1=document.getElementsByName('pawan1');
+        elements1[0].style.backgroundColor ="blue";
+
+        let elements2=document.getElementsByName('pawan1');
+        elements2[0].style.backgroundColor="red";
+
+
+        let paragraph=document.getElementsByTagName('p');
+        paragraph[1].style.backgroundColor="green";
+        paragraph[2].style.backgroundColor="red";
+        paragraph[3].style.backgroundColor="blue";
+
+
+
+
+    </script>
+
+</body>
+</html>

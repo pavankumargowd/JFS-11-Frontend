@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="login-username">Username:</label>
+        <input type="text" id="login-username" name="username" required>
+        <br><br>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" required>
+        <br><br>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="index.html">Register here</a></p>
+
+    <script>
+        function login() {
+            // This is a placeholder for login logic
+            // In a real app, you would check the credentials and set a session here
+
+            // Simulate successful login
+            alert('Login successful! Redirecting to welcome page.');
+            window.location.href = 'welcome.html';
+        }
+    </script>
+</body>
+</html>
